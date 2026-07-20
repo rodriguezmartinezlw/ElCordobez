@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.hero-pattern {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgb(159 95 59 / 0.12), transparent 28rem),
+    radial-gradient(circle at 80% 0%, rgb(159 95 59 / 0.1), transparent 24rem),
+    linear-gradient(135deg, rgb(159 95 59 / 0.08) 25%, transparent 25%),
+    linear-gradient(225deg, rgb(159 95 59 / 0.08) 25%, transparent 25%);
+  background-size: auto, auto, 48px 48px, 48px 48px;
+}

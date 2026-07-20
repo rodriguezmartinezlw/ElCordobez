@@ -1,5 +1,9 @@
+'use client';
+
+import { useEffect } from 'react';
+
 const heroImage =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuD8qVzSKq4Bpy8oCwVA--3Zwv4s-d800GVM13JF4Gi-CNrWkRaFLa1Dlvlc9VJ2Iguu6yCj4rc6OAY2qJ4R_wXkyLpLikhDn6ow_rKhu0i2ypMziMHleDdPAsPgLtd2cawGcxARBzAEpQSy...';
+  'https://lh3.googleusercontent.com/aida-public/AB6AXuD8qVzSKq4Bpy8oCwVA--3Zwv4s-d800GVM13JF4Gi-CNrWkRaFLa1Dlvlc9VJ2Iguu6yCj4rc6OAY2qJ4R_wXkyLpLikhDn6ow_rKhu0i2ypMziMHleDdPAsPgLtd2cawGcxARBzAEpQSy-8kB5CWfz0w2LQk7j6VrNy8Y_pKD3jQ_F3Mw1-X2i-qk5_ArsXHjA5cA';
 
 const proposalSections = [
   {
@@ -7,10 +11,10 @@ const proposalSections = [
     icon: 'restaurant',
     title: 'Restaurante de Origen',
     description:
-      'Descubra la esencia de la Cocina Manchega. Nuestra carta rinde homenaje a los productos locales: desde la miel de La Alcarria hasta los vinos de la región, cada plato es un viaje sensorial...',
+      'Descubra la esencia de la Cocina Manchega. Nuestra carta rinde homenaje a los productos locales: desde la miel de La Alcarria hasta los vinos de la región, cada plato es un viaje sensorial por los sabores de Castilla-La Mancha.',
     bullets: ['Especialidad en asados tradicionales', 'Productos de proximidad (Km 0)', 'Bodega con selección de D.O. locales'],
     image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAKqv9i1BPLFJPe63z57-KpZFYR33lWZxxke76hUf_PSTjnPyEBZ6M32v7KTYMoPG2_SI_rCH_FqYsWl1qSnqABzBDcwXVG_5LuVcpqS5wDLl7HKq3f_N7xOgEszoVAMvMT4uK4LiO...',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuAKqv9i1BPLFJPe63z57-KpZFYR33lWZxxke76hUf_PSTjnPyEBZ6M32v7KTYMoPG2_SI_rCH_FqYsWl1qSnqABzBDcwXVG_5LuVcpqS5wDLl7HKq3f_N7xOgEszoVAMvMT4uK4LiOxGzQ',
     alt: 'Restaurante de Origen',
     reverse: true,
   },
@@ -22,7 +26,7 @@ const proposalSections = [
       'El lugar ideal para desconectar. Disfrute de atardeceres mágicos en nuestro patio rústico con una selección de coctelería de autor y aperitivos tradicionales en un ambiente relajado.',
     bullets: ['Terraza exterior con encanto', 'Coctelería clásica y creativa', 'Tapas y raciones de autor'],
     image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDr-Fq5PWvv8RpebFtVihvr1ORXD_HRmVMes7b78Jko9yGoHQ4CeAUuE0Duq5VvHycznXVo0As9wrU7cgLrDnlouVUt6Lh9xMi2QfiFGRNzs0tmC59oDUVwGYAr0zrzzJ501b88CZW...',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuDr-Fq5PWvv8RpebFtVihvr1ORXD_HRmVMes7b78Jko9yGoHQ4CeAUuE0Duq5VvHycznXVo0As9wrU7cgLrDnlouVUt6Lh9xMi2QfiFGRNzs0tmC59oDUVwGYAr0zrzzJ501b88CZW',
     alt: 'Bar y Terraza',
   },
   {
@@ -30,27 +34,27 @@ const proposalSections = [
     icon: 'groups',
     title: 'Salón de Eventos',
     description:
-      'Un espacio versátil que se adapta a sus necesidades. Desde bodas exclusivas y celebraciones privadas hasta reuniones corporativas, nuestro salón ofrece la elegancia y tecnología necesaria...',
+      'Un espacio versátil que se adapta a sus necesidades. Desde bodas exclusivas y celebraciones privadas hasta reuniones corporativas, nuestro salón ofrece la elegancia y tecnología necesaria para hacer memorable cualquier evento.',
     bullets: ['Capacidad modular para grandes grupos', 'Equipamiento audiovisual completo', 'Asesoramiento personalizado para eventos'],
     image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCj8HkKlK2GRlWCY4k3tQssNAOocgVlSYKs7O0427mOmBC2GCtV8EhztYCpzidlf2J9s2kM1SJXN2c-vJmmIirn8HyUGRlkO2iZKTPLRLQIGDBi3cB6J6MwVJ9r6rDH3JRjfzbA7TQ...',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuCj8HkKlK2GRlWCY4k3tQssNAOocgVlSYKs7O0427mOmBC2GCtV8EhztYCpzidlf2J9s2kM1SJXN2c-vJmmIirn8HyUGRlkO2iZKTPLRLQIGDBi3cB6J6MwVJ9r6rDH3JRjfzbA7TQ',
     alt: 'Salón de Eventos',
     reverse: true,
   },
 ];
 
 const services = [
-  ['hotel', 'Alojamiento Cercano', 'Trabajamos con los mejores hoteles y casas rurales de Guadalajara para ofrecer tarifas especiales a vuestros invitados. Facilitamos el servicio de autobuses...'],
-  ['event_available', 'Wedding Planner', 'Nuestro equipo de coordinación integral os acompañará desde el primer día. Diseño conceptual, búsqueda de proveedores, gestión de presupuesto y coordinación...'],
+  ['hotel', 'Alojamiento Cercano', 'Trabajamos con los mejores hoteles y casas rurales de Guadalajara para ofrecer tarifas especiales a vuestros invitados. Facilitamos el servicio de autobuses desde el aeropuerto.', 'Ver opciones'],
+  ['event_available', 'Wedding Planner', 'Nuestro equipo de coordinación integral os acompañará desde el primer día. Diseño conceptual, búsqueda de proveedores, gestión de presupuesto y coordinación de todos los detalles.', 'Consultar'],
 ];
 
 const gallery = [
-  ['Detalle floral boda', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAHCj1dJ3lKknW32VdODwrX7fa7tV7jorwUzYDAFr0ZI75oCPU6tu2X2m5s0tOIY8i5tYKPPypqoII5FyJlNUxwTSZTWRd-06fP4EjhILsYNYaAP6XvIWE...'],
-  ['Novios en la naturaleza', 'https://lh3.googleusercontent.com/aida-public/AB6AXuBgCqsUbDtEW6P4doGauXOG9hPhJYT7t57uvVd0_wTkrjd-H24-VLn4WQ27nsbX_Qwb11mWV_EeEHWNiqmviJ5jB8uXVdz-5qE0xui4GVH8PJ33K9y...'],
-  ['Mesa decorada banquete', 'https://lh3.googleusercontent.com/aida-public/AB6AXuDgi294C0tE5fugJjT9Tufwnnh3o1MWRDShrDJIvzeXvzrLlTE9WMlkvorTbgiCgoQj3ECJxB4G3fK2H99ZgysICfP9m0b4nxd4b_m8CxeF7hdkNW5M...'],
-  ['Detalle banquete rústico', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAoyOI_fir9zS_6cgubCSTpPkIzTZzHcblc-NiCkK9HLB15UP4JKXRtvLpjtycmAfhDGXtW5okJQgZ8ysOxXIZVmES2EF6jTwCnf8afE1SkVdWod...'],
-  ['Tarta nupcial', 'https://lh3.googleusercontent.com/aida-public/AB6AXuDY8RGO9kt9h2GTbTWl9N9lXbenkcYhIj1MO4RG_nY0eG3IsvsErtuP9TVq1cjJl8-cVy8uxVJmyPiqEcE6SrK7v7pNDKd3u_SbGv1PG8w4A5lBAnNb37VMMgbwN...'],
-  ['Brindis novios', 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ_Vbwi2bR89O2vMFGTODfTiB940H_UnC0UrTj-klxbtlB8x9Nw2CgRMIF83v1IvP9qffyY2jyLPocewMXu7EyY9xM0xYwodXvf3_Pb-KOnTcp8hcZHDrOasH...'],
+  ['Detalle floral boda', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAHCj1dJ3lKknW32VdODwrX7fa7tV7jorwUzYDAFr0ZI75oCPU6tu2X2m5s0tOIY8i5tYKPPypqoII5FyJlNUxwTSZTWRd-06fP4EjhILsYNYaAP6XvIWE'],
+  ['Novios en la naturaleza', 'https://lh3.googleusercontent.com/aida-public/AB6AXuBgCqsUbDtEW6P4doGauXOG9hPhJYT7t57uvVd0_wTkrjd-H24-VLn4WQ27nsbX_Qwb11mWV_EeEHWNiqmviJ5jB8uXVdz-5qE0xui4GVH8PJ33K9y'],
+  ['Mesa decorada banquete', 'https://lh3.googleusercontent.com/aida-public/AB6AXuDgi294C0tE5fugJjT9Tufwnnh3o1MWRDShrDJIvzeXvzrLlTE9WMlkvorTbgiCgoQj3ECJxB4G3fK2H99ZgysICfP9m0b4nxd4b_m8CxeF7hdkNW5M'],
+  ['Detalle banquete rústico', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAoyOI_fir9zS_6cgubCSTpPkIzTZzHcblc-NiCkK9HLB15UP4JKXRtvLpjtycmAfhDGXtW5okJQgZ8ysOxXIZVmES2EF6jTwCnf8afE1SkVdWod'],
+  ['Tarta nupcial', 'https://lh3.googleusercontent.com/aida-public/AB6AXuDY8RGO9kt9h2GTbTWl9N9lXbenkcYhIj1MO4RG_nY0eG3IsvsErtuP9TVq1cjJl8-cVy8uxVJmyPiqEcE6SrK7v7pNDKd3u_SbGv1PG8w4A5lBAnNb37VMMgbwN'],
+  ['Brindis novios', 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ_Vbwi2bR89O2vMFGTODfTiB940H_UnC0UrTj-klxbtlB8x9Nw2CgRMIF83v1IvP9qffyY2jyLPocewMXu7EyY9xM0xYwodXvf3_Pb-KOnTcp8hcZHDrOasH'],
 ];
 
 function Icon({ children, className = '' }: { children: string; className?: string }) {
@@ -58,6 +62,20 @@ function Icon({ children, className = '' }: { children: string; className?: stri
 }
 
 export default function Home() {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.scroll-animate').forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <main>
       <header className="fixed z-50 w-full border-b border-border-light bg-surface-light/90 backdrop-blur-md dark:border-border-dark dark:bg-surface-dark/90">
@@ -104,7 +122,7 @@ export default function Home() {
             <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-light dark:text-muted-dark">Desde una cena íntima con sabores de la tierra hasta grandes eventos corporativos, cada rincón de nuestra finca es un escenario perfecto.</p>
           </div>
           {proposalSections.map((section, index) => (
-            <div key={section.id} className={`grid grid-cols-1 items-center gap-12 ${index < proposalSections.length - 1 ? 'mb-20' : ''} md:grid-cols-2`} id={section.id}>
+            <div key={section.id} className={`grid grid-cols-1 items-center gap-12 ${index < proposalSections.length - 1 ? 'mb-20' : ''} md:grid-cols-2 scroll-animate`} id={section.id}>
               <div className={`${section.reverse ? 'order-2 md:order-1' : 'md:order-2'} group relative`}>
                 <div className="absolute -inset-2 rounded-xl bg-primary/20 blur-lg transition duration-500 group-hover:bg-primary/30" />
                 <img alt={section.alt} className="relative h-[400px] w-full rounded-xl object-cover shadow-2xl animate-fade-in-zoom" src={section.image} />
@@ -128,12 +146,12 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionTitle title="Servicios Exclusivos" subtitle="Para que no tengáis que preocuparos por nada." />
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            {services.map(([icon, title, text]) => (
-              <article key={title} className="flex h-full flex-col rounded-xl border border-border-light bg-surface-light p-8 shadow-md transition-colors hover:border-primary dark:border-border-dark dark:bg-surface-dark animate-fade-in-up">
+            {services.map(([icon, title, text, link]) => (
+              <article key={title} className="scroll-animate flex h-full flex-col rounded-xl border border-border-light bg-surface-light p-8 shadow-md transition-colors hover:border-primary dark:border-border-dark dark:bg-surface-dark">
                 <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10"><Icon className="text-3xl text-primary">{icon}</Icon></div>
                 <h3 className="mb-4 font-display text-2xl font-bold">{title}</h3>
                 <p className="mb-6 flex-grow text-muted-light dark:text-muted-dark">{text}</p>
-                <a className="mt-auto flex items-center gap-1 font-medium text-primary hover:underline" href="#contacto">Saber más<Icon className="text-sm">arrow_forward</Icon></a>
+                <a className="mt-auto flex items-center gap-1 font-medium text-primary hover:underline" href="#contacto">{link}<Icon className="text-sm">arrow_forward</Icon></a>
               </article>
             ))}
           </div>
@@ -144,7 +162,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionTitle title="Eventos Reales" />
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-            {gallery.map(([alt, src]) => <img key={src} alt={alt} className="h-48 w-full cursor-pointer rounded-lg object-cover shadow-sm transition-opacity hover:opacity-90 animate-fade-in-up" src={src} />)}
+            {gallery.map(([alt, src]) => <img key={src} alt={alt} className="scroll-animate h-48 w-full cursor-pointer rounded-lg object-cover shadow-sm transition-opacity hover:opacity-90" src={src} />)}
           </div>
           <div className="mt-10 text-center"><button className="rounded-full border-2 border-primary bg-transparent px-8 py-3 font-medium text-primary transition-colors hover:bg-primary hover:text-white">Ver toda la galería</button></div>
         </div>
@@ -197,7 +215,7 @@ function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 grid grid-cols-1 gap-12 text-center md:grid-cols-3 md:text-left">
           <div><div className="mb-6 flex items-center justify-center gap-2 md:justify-start"><span className="font-display text-2xl font-bold text-primary">El Cordobés</span></div><p className="text-muted-light dark:text-muted-dark">Finca de eventos en Hontoba, Guadalajara. Restaurante, bar y salón de bodas.</p></div>
-          <div><h4 className="mb-6 font-display text-xl font-bold">Contacto</h4><ul className="space-y-4"><li className="flex items-start justify-center gap-3 text-muted-light dark:text-muted-dark md:justify-start"><Icon className="text-lg">phone</Icon><a href="tel:+34949...">+34 949 ...</a></li><li className="flex items-start justify-center gap-3 text-muted-light dark:text-muted-dark md:justify-start"><Icon className="text-lg">email</Icon><a href="mailto:info@elcordobes.es">info@elcordobes.es</a></li></ul></div>
+          <div><h4 className="mb-6 font-display text-xl font-bold">Contacto</h4><ul className="space-y-4"><li className="flex items-start justify-center gap-3 text-muted-light dark:text-muted-dark md:justify-start"><Icon className="text-lg">phone</Icon><a href="tel:+34949..." className="hover:text-primary">+34 949 ...</a></li><li className="flex items-start justify-center gap-3 text-muted-light dark:text-muted-dark md:justify-start"><Icon className="text-lg">email</Icon><a href="mailto:info@elcordobes.es" className="hover:text-primary">info@elcordobes.es</a></li></ul></div>
           <div><h4 className="mb-6 font-display text-xl font-bold">Síguenos</h4><p className="mb-4 text-muted-light dark:text-muted-dark">Inspírate con nuestras últimas celebraciones.</p><div className="flex items-center justify-center gap-4 md:justify-start"><a href="#" className="transition-colors hover:text-primary">Instagram</a><a href="#" className="transition-colors hover:text-primary">Facebook</a></div></div>
         </div>
         <div className="flex flex-col items-center justify-between border-t border-border-light pt-8 text-sm text-muted-light dark:border-border-dark dark:text-muted-dark md:flex-row"><p>© 2024 Finca El Cordobés. Todos los derechos reservados.</p><p>Hontoba, Guadalajara</p></div>

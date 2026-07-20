@@ -51,7 +51,7 @@ const gallery = [
   ['Mesa decorada banquete', 'https://images.unsplash.com/photo-1519167758481-dc8986ba6c28?w=600&h=600&fit=crop'],
   ['Detalle banquete rústico', 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=600&h=600&fit=crop'],
   ['Tarta nupcial', 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=600&fit=crop'],
-  ['Brindis novios', 'https://images.unsplash.com/photo-1533900298318-6b8da08a523e?w=600&h=600&fit=crop'],
+  ['Brindis novios', 'public/images/WhatsApp Image 2026-07-17 at 19.14.59 (4).jpeg'],
 ];
 
 function Icon({ children, className = '' }: { children: string; className?: string }) {

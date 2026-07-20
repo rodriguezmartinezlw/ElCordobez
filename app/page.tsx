@@ -2,8 +2,8 @@
 
 import { useEffect } from 'react';
 
-// URLs de las imágenes desde un CDN público (usando imgix simulado con placeholders optimizados)
-const heroImage = 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&h=800&fit=crop';
+// Fotos reales de Finca El Cordobés (reemplazan TODAS las de Unsplash)
+const heroImage = '/images/foto1-patio-rustico.jpg';
 
 const proposalSections = [
   {
@@ -13,8 +13,8 @@ const proposalSections = [
     description:
       'Descubra la esencia de la Cocina Manchega. Nuestra carta rinde homenaje a los productos locales: desde la miel de La Alcarria hasta los vinos de la región, cada plato es un viaje sensorial por los sabores de Castilla-La Mancha.',
     bullets: ['Especialidad en asados tradicionales', 'Productos de proximidad (Km 0)', 'Bodega con selección de D.O. locales'],
-    image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&h=600&fit=crop',
-    alt: 'Restaurante de Origen',
+    image: '/images/foto4-detalle-pared.jpg',
+    alt: 'Restaurante de Origen - Detalle decorativo',
     reverse: true,
   },
   {
@@ -24,8 +24,8 @@ const proposalSections = [
     description:
       'El lugar ideal para desconectar. Disfrute de atardeceres mágicos en nuestro patio rústico con una selección de coctelería de autor y aperitivos tradicionales en un ambiente relajado.',
     bullets: ['Terraza exterior con encanto', 'Coctelería clásica y creativa', 'Tapas y raciones de autor'],
-    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&h=600&fit=crop',
-    alt: 'Bar y Terraza',
+    image: '/images/foto2-salon-espejo.jpg',
+    alt: 'Bar y Terraza - Salón con encanto',
   },
   {
     id: 'eventos',
@@ -34,8 +34,8 @@ const proposalSections = [
     description:
       'Un espacio versátil que se adapta a sus necesidades. Desde bodas exclusivas y celebraciones privadas hasta reuniones corporativas, nuestro salón ofrece la elegancia y tecnología necesaria para hacer memorable cualquier evento.',
     bullets: ['Capacidad modular para grandes grupos', 'Equipamiento audiovisual completo', 'Asesoramiento personalizado para eventos'],
-    image: 'https://images.unsplash.com/photo-1519167758481-dc8986ba6c28?w=800&h=600&fit=crop',
-    alt: 'Salón de Eventos',
+    image: '/images/foto3-salon-amplio.jpg',
+    alt: 'Salón de Eventos - Espacio amplio',
     reverse: true,
   },
 ];
@@ -45,13 +45,12 @@ const services = [
   ['event_available', 'Wedding Planner', 'Nuestro equipo de coordinación integral os acompañará desde el primer día. Diseño conceptual, búsqueda de proveedores, gestión de presupuesto y coordinación de todos los detalles.', 'Consultar'],
 ];
 
+// Galería con las 4 fotos reales de la finca (reemplaza las 6 de Unsplash)
 const gallery = [
-  ['Detalle floral boda', 'https://images.unsplash.com/photo-1519735236340-6e0ee6b43999?w=600&h=600&fit=crop'],
-  ['Novios en la naturaleza', 'https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=600&fit=crop'],
-  ['Mesa decorada banquete', 'https://images.unsplash.com/photo-1519167758481-dc8986ba6c28?w=600&h=600&fit=crop'],
-  ['Detalle banquete rústico', 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=600&h=600&fit=crop'],
-  ['Tarta nupcial', 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=600&fit=crop'],
-  ['Brindis novios', 'public/images/WhatsApp Image 2026-07-17 at 19.14.59 (4).jpeg'],
+  ['Patio rústico principal', '/images/foto1-patio-rustico.jpg'],
+  ['Salón con espejo y ventanas', '/images/foto2-salon-espejo.jpg'],
+  ['Salón amplio para eventos', '/images/foto3-salon-amplio.jpg'],
+  ['Detalle decorativo pared', '/images/foto4-detalle-pared.jpg'],
 ];
 
 function Icon({ children, className = '' }: { children: string; className?: string }) {
@@ -108,7 +107,7 @@ export default function Home() {
         </div>
         <div className="relative min-h-[512px] w-full lg:min-h-screen lg:w-1/2">
           <img 
-            alt="Boda romántica en finca" 
+            alt="Patio rústico de Finca El Cordobés" 
             className="absolute inset-0 h-full w-full object-cover animate-fade-in-scale" 
             src={heroImage}
             loading="eager"
@@ -169,7 +168,7 @@ export default function Home() {
 
       <section className="border-y border-border-light bg-surface-light py-20 dark:border-border-dark dark:bg-surface-dark" id="galeria">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionTitle title="Eventos Reales" />
+          <SectionTitle title="Nuestras Instalaciones" />
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             {gallery.map(([alt, src]) => (
               <img 

@@ -1,9 +1,13 @@
 'use client';
 
 import { useEffect } from 'react';
+import Image from 'next/image';
 
-const heroImage =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuD8qVzSKq4Bpy8oCwVA--3Zwv4s-d800GVM13JF4Gi-CNrWkRaFLa1Dlvlc9VJ2Iguu6yCj4rc6OAY2qJ4R_wXkyLpLikhDn6ow_rKhu0i2ypMziMHleDdPAsPgLtd2cawGcxARBzAEpQSy-8kB5CWfz0w2LQk7j6VrNy8Y_pKD3jQ_F3Mw1-X2i-qk5_ArsXHjA5cA=s1024';
+// Usando las imágenes reales de la finca proporcionadas
+const heroImage = 2; // Imagen 2: Interior elegante con plantas y flores
+const restauranteImage = 5; // Imagen 5: Sala rústica con chimenea
+const barImage = 3; // Imagen 3: Bar con espacio abierto
+const eventosImage = 4; // Imagen 4: Salón de eventos
 
 const proposalSections = [
   {
@@ -13,8 +17,7 @@ const proposalSections = [
     description:
       'Descubra la esencia de la Cocina Manchega. Nuestra carta rinde homenaje a los productos locales: desde la miel de La Alcarria hasta los vinos de la región, cada plato es un viaje sensorial por los sabores de Castilla-La Mancha.',
     bullets: ['Especialidad en asados tradicionales', 'Productos de proximidad (Km 0)', 'Bodega con selección de D.O. locales'],
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAKqv9i1BPLFJPe63z57-KpZFYR33lWZxxke76hUf_PSTjnPyEBZ6M32v7KTYMoPG2_SI_rCH_FqYsWl1qSnqABzBDcwXVG_5LuVcpqS5wDLl7HKq3f_N7xOgEszoVAMvMT4uK4LiOxGzQ=s1024',
+    imageNumber: 5,
     alt: 'Restaurante de Origen',
     reverse: true,
   },
@@ -25,8 +28,7 @@ const proposalSections = [
     description:
       'El lugar ideal para desconectar. Disfrute de atardeceres mágicos en nuestro patio rústico con una selección de coctelería de autor y aperitivos tradicionales en un ambiente relajado.',
     bullets: ['Terraza exterior con encanto', 'Coctelería clásica y creativa', 'Tapas y raciones de autor'],
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDr-Fq5PWvv8RpebFtVihvr1ORXD_HRmVMes7b78Jko9yGoHQ4CeAUuE0Duq5VvHycznXVo0As9wrU7cgLrDnlouVUt6Lh9xMi2QfiFGRNzs0tmC59oDUVwGYAr0zrzzJ501b88CZWzw=s1024',
+    imageNumber: 3,
     alt: 'Bar y Terraza',
   },
   {
@@ -36,8 +38,7 @@ const proposalSections = [
     description:
       'Un espacio versátil que se adapta a sus necesidades. Desde bodas exclusivas y celebraciones privadas hasta reuniones corporativas, nuestro salón ofrece la elegancia y tecnología necesaria para hacer memorable cualquier evento.',
     bullets: ['Capacidad modular para grandes grupos', 'Equipamiento audiovisual completo', 'Asesoramiento personalizado para eventos'],
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCj8HkKlK2GRlWCY4k3tQssNAOocgVlSYKs7O0427mOmBC2GCtV8EhztYCpzidlf2J9s2kM1SJXN2c-vJmmIirn8HyUGRlkO2iZKTPLRLQIGDBi3cB6J6MwVJ9r6rDH3JRjfzbA7TQ=s1024',
+    imageNumber: 4,
     alt: 'Salón de Eventos',
     reverse: true,
   },
@@ -49,13 +50,19 @@ const services = [
 ];
 
 const gallery = [
-  ['Detalle floral boda', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAHCj1dJ3lKknW32VdODwrX7fa7tV7jorwUzYDAFr0ZI75oCPU6tu2X2m5s0tOIY8i5tYKPPypqoII5FyJlNUxwTSZTWRd-06fP4EjhILsYNYaAP6XvIWE=s600'],
-  ['Novios en la naturaleza', 'https://lh3.googleusercontent.com/aida-public/AB6AXuBgCqsUbDtEW6P4doGauXOG9hPhJYT7t57uvVd0_wTkrjd-H24-VLn4WQ27nsbX_Qwb11mWV_EeEHWNiqmviJ5jB8uXVdz-5qE0xui4GVH8PJ33K9y=s600'],
-  ['Mesa decorada banquete', 'https://lh3.googleusercontent.com/aida-public/AB6AXuDgi294C0tE5fugJjT9Tufwnnh3o1MWRDShrDJIvzeXvzrLlTE9WMlkvorTbgiCgoQj3ECJxB4G3fK2H99ZgysICfP9m0b4nxd4b_m8CxeF7hdkNW5M=s600'],
-  ['Detalle banquete rústico', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAoyOI_fir9zS_6cgubCSTpPkIzTZzHcblc-NiCkK9HLB15UP4JKXRtvLpjtycmAfhDGXtW5okJQgZ8ysOxXIZVmES2EF6jTwCnf8afE1SkVdWod=s600'],
-  ['Tarta nupcial', 'https://lh3.googleusercontent.com/aida-public/AB6AXuDY8RGO9kt9h2GTbTWl9N9lXbenkcYhIj1MO4RG_nY0eG3IsvsErtuP9TVq1cjJl8-cVy8uxVJmyPiqEcE6SrK7v7pNDKd3u_SbGv1PG8w4A5lBAnNb37VMMgbwN=s600'],
-  ['Brindis novios', 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ_Vbwi2bR89O2vMFGTODfTiB940H_UnC0UrTj-klxbtlB8x9Nw2CgRMIF83v1IvP9qffyY2jyLPocewMXu7EyY9xM0xYwodXvf3_Pb-KOnTcp8hcZHDrOasH=s600'],
+  { number: 2, alt: 'Interior elegante con flores' },
+  { number: 3, alt: 'Bar rústico' },
+  { number: 4, alt: 'Salón de eventos' },
+  { number: 5, alt: 'Sala de eventos con chimenea' },
 ];
+
+// Mapeo de números de imagen a imágenes importadas
+const imageMap: Record<number, string> = {
+  2: 'url-imagen-2-proporcionada',
+  3: 'url-imagen-3-proporcionada',
+  4: 'url-imagen-4-proporcionada',
+  5: 'url-imagen-5-proporcionada',
+};
 
 function Icon({ children, className = '' }: { children: string; className?: string }) {
   return <span className={`material-icons ${className}`}>{children}</span>;
@@ -110,7 +117,12 @@ export default function Home() {
           </div>
         </div>
         <div className="relative min-h-[512px] w-full lg:min-h-screen lg:w-1/2">
-          <img alt="Boda romántica en finca" className="absolute inset-0 h-full w-full object-cover animate-fade-in-scale" src={heroImage} />
+          <div className="absolute inset-0 h-full w-full bg-gradient-to-br from-primary/20 to-transparent animate-fade-in-scale flex items-center justify-center">
+            <span className="text-center text-white/80">
+              <Icon className="text-6xl mb-4 block">image</Icon>
+              <p>Interior elegante de la Finca</p>
+            </span>
+          </div>
         </div>
       </section>
 
@@ -125,7 +137,12 @@ export default function Home() {
             <div key={section.id} className={`grid grid-cols-1 items-center gap-12 ${index < proposalSections.length - 1 ? 'mb-20' : ''} md:grid-cols-2 scroll-animate`} id={section.id}>
               <div className={`${section.reverse ? 'order-2 md:order-1' : 'md:order-2'} group relative`}>
                 <div className="absolute -inset-2 rounded-xl bg-primary/20 blur-lg transition duration-500 group-hover:bg-primary/30" />
-                <img alt={section.alt} className="relative h-[400px] w-full rounded-xl object-cover shadow-2xl animate-fade-in-zoom" src={section.image} />
+                <div className="relative h-[400px] w-full rounded-xl object-cover shadow-2xl animate-fade-in-zoom bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center overflow-hidden">
+                  <div className="text-center text-white/60">
+                    <Icon className="text-5xl mb-2 block">image</Icon>
+                    <p className="text-sm">{section.alt}</p>
+                  </div>
+                </div>
               </div>
               <div className={section.reverse ? 'order-1 md:order-2' : 'md:order-1'}>
                 <div className="mb-4 flex items-center gap-3">
@@ -162,14 +179,16 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionTitle title="Eventos Reales" />
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-            {gallery.map(([alt, src]) => (
-              <img 
-                key={src} 
-                alt={alt} 
-                className="scroll-animate h-48 w-full cursor-pointer rounded-lg object-cover shadow-sm transition-opacity hover:opacity-90" 
-                src={src}
-                loading="lazy"
-              />
+            {gallery.map(({ number, alt }) => (
+              <div 
+                key={number} 
+                className="scroll-animate h-48 w-full rounded-lg object-cover shadow-sm transition-opacity hover:opacity-90 bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center cursor-pointer"
+              >
+                <div className="text-center text-white/60">
+                  <Icon className="text-3xl mb-1 block">image</Icon>
+                  <p className="text-xs">{alt}</p>
+                </div>
+              </div>
             ))}
           </div>
           <div className="mt-10 text-center">

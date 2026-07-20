@@ -1,5 +1,5 @@
 const heroImage =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuD8qVzSKq4Bpy8oCwVA--3Zwv4s-d800GVM13JF4Gi-CNrWkRaFLa1Dlvlc9VJ2Iguu6yCj4rc6OAY2qJ4R_wXkyLpLikhDn6ow_rKhu0i2ypMziMHleDdPAsPgLtd2cawGcxARBzAEpQSytrTQdzBZu0Z2n8P9IAIwvCZ2--yTV8TAFRWfFo6dQiA0ujoOjBsdfTuBJVF6Q7oXfYH7H0H2z-WN7lKoB5RXR5IhJMbdSd4RGP01uWDf4IZTszkgp8mHsYybrlBzS2yu';
+  'https://lh3.googleusercontent.com/aida-public/AB6AXuD8qVzSKq4Bpy8oCwVA--3Zwv4s-d800GVM13JF4Gi-CNrWkRaFLa1Dlvlc9VJ2Iguu6yCj4rc6OAY2qJ4R_wXkyLpLikhDn6ow_rKhu0i2ypMziMHleDdPAsPgLtd2cawGcxARBzAEpQSy...';
 
 const proposalSections = [
   {
@@ -7,10 +7,10 @@ const proposalSections = [
     icon: 'restaurant',
     title: 'Restaurante de Origen',
     description:
-      'Descubra la esencia de la Cocina Manchega. Nuestra carta rinde homenaje a los productos locales: desde la miel de La Alcarria hasta los vinos de la región, cada plato es un viaje sensorial por nuestra tierra.',
+      'Descubra la esencia de la Cocina Manchega. Nuestra carta rinde homenaje a los productos locales: desde la miel de La Alcarria hasta los vinos de la región, cada plato es un viaje sensorial...',
     bullets: ['Especialidad en asados tradicionales', 'Productos de proximidad (Km 0)', 'Bodega con selección de D.O. locales'],
     image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAKqv9i1BPLFJPe63z57-KpZFYR33lWZxxke76hUf_PSTjnPyEBZ6M32v7KTYMoPG2_SI_rCH_FqYsWl1qSnqABzBDcwXVG_5LuVcpqS5wDLl7HKq3f_N7xOgEszoVAMvMT4uK4LiOk6DqpHl6c1h3BfR5qK0ayETkled51pczbW7x2DeoRivXlJ3T2mG8if13PnRvOEAU8SfgTppwoIerSMFPdK31kNovPFu1G79jbs--q0TI_l1GuwdTOYrC_2bWOncF9rIw4eyl_',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuAKqv9i1BPLFJPe63z57-KpZFYR33lWZxxke76hUf_PSTjnPyEBZ6M32v7KTYMoPG2_SI_rCH_FqYsWl1qSnqABzBDcwXVG_5LuVcpqS5wDLl7HKq3f_N7xOgEszoVAMvMT4uK4LiO...',
     alt: 'Restaurante de Origen',
     reverse: true,
   },
@@ -22,7 +22,7 @@ const proposalSections = [
       'El lugar ideal para desconectar. Disfrute de atardeceres mágicos en nuestro patio rústico con una selección de coctelería de autor y aperitivos tradicionales en un ambiente relajado.',
     bullets: ['Terraza exterior con encanto', 'Coctelería clásica y creativa', 'Tapas y raciones de autor'],
     image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDr-Fq5PWvv8RpebFtVihvr1ORXD_HRmVMes7b78Jko9yGoHQ4CeAUuE0Duq5VvHycznXVo0As9wrU7cgLrDnlouVUt6Lh9xMi2QfiFGRNzs0tmC59oDUVwGYAr0zrzzJ501b88CZWk_lJFITRtJLhTSplorr8AMbX3TiWtw1uk5qaEQKHYVNt3m8B7QEjRkDtaao7EmJpRCKOg9tOjhpGjzsXrLH0jBRJXMfzJmMspfadF3uXESG9jC3fIUKTgqg8HBKekyuNhXqUA',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuDr-Fq5PWvv8RpebFtVihvr1ORXD_HRmVMes7b78Jko9yGoHQ4CeAUuE0Duq5VvHycznXVo0As9wrU7cgLrDnlouVUt6Lh9xMi2QfiFGRNzs0tmC59oDUVwGYAr0zrzzJ501b88CZW...',
     alt: 'Bar y Terraza',
   },
   {
@@ -30,27 +30,27 @@ const proposalSections = [
     icon: 'groups',
     title: 'Salón de Eventos',
     description:
-      'Un espacio versátil que se adapta a sus necesidades. Desde bodas exclusivas y celebraciones privadas hasta reuniones corporativas, nuestro salón ofrece la elegancia y tecnología necesarias.',
+      'Un espacio versátil que se adapta a sus necesidades. Desde bodas exclusivas y celebraciones privadas hasta reuniones corporativas, nuestro salón ofrece la elegancia y tecnología necesaria...',
     bullets: ['Capacidad modular para grandes grupos', 'Equipamiento audiovisual completo', 'Asesoramiento personalizado para eventos'],
     image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCj8HkKlK2GRlWCY4k3tQssNAOocgVlSYKs7O0427mOmBC2GCtV8EhztYCpzidlf2J9s2kM1SJXN2c-vJmmIirn8HyUGRlkO2iZKTPLRLQIGDBi3cB6J6MwVJ9r6rDH3JRjfzbA7TQjM-IHfF7RBhCEJx3PbLcvb8C_c6pWOd3hlUH8EAu6aouOd7aSn4bIxeEAISP0sGFiMabNve0u7lzcS7b1mdr9g0LdmTw929S0kSNGFuxyZeDxpYDZlc5HZXRNqYMYtwp1hA7K',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuCj8HkKlK2GRlWCY4k3tQssNAOocgVlSYKs7O0427mOmBC2GCtV8EhztYCpzidlf2J9s2kM1SJXN2c-vJmmIirn8HyUGRlkO2iZKTPLRLQIGDBi3cB6J6MwVJ9r6rDH3JRjfzbA7TQ...',
     alt: 'Salón de Eventos',
     reverse: true,
   },
 ];
 
 const services = [
-  ['hotel', 'Alojamiento Cercano', 'Trabajamos con los mejores hoteles y casas rurales de Guadalajara para ofrecer tarifas especiales a vuestros invitados. Facilitamos el servicio de autobuses desde los puntos de alojamiento hasta la finca.', 'Ver opciones de alojamiento'],
-  ['event_available', 'Wedding Planner', 'Nuestro equipo de coordinación integral os acompañará desde el primer día. Diseño conceptual, búsqueda de proveedores, gestión de presupuesto y coordinación el día B para que solo os preocupéis de disfrutar.', 'Conoce a nuestro equipo'],
+  ['hotel', 'Alojamiento Cercano', 'Trabajamos con los mejores hoteles y casas rurales de Guadalajara para ofrecer tarifas especiales a vuestros invitados. Facilitamos el servicio de autobuses...'],
+  ['event_available', 'Wedding Planner', 'Nuestro equipo de coordinación integral os acompañará desde el primer día. Diseño conceptual, búsqueda de proveedores, gestión de presupuesto y coordinación...'],
 ];
 
 const gallery = [
-  ['Detalle floral boda', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAHCj1dJ3lKknW32VdODwrX7fa7tV7jorwUzYDAFr0ZI75oCPU6tu2X2m5s0tOIY8i5tYKPPypqoII5FyJlNUxwTSZTWRd-06fP4EjhILsYNYaAP6XvIWEcHYKUP1lDljGPECXO1WvtuchLBMWAIdEjFH7sFuwj6OdHyBInNi0Kd6cxQoIrGGl5oPlSTYBlSQ53KnV_1BGwyRpht5n1FXn0bULYnbvt1G8x2wTHKIMvfOLjjVgqUvo8bPCzW1ITsLb4zHXmcRecmIZ1', ''],
-  ['Novios en la naturaleza', 'https://lh3.googleusercontent.com/aida-public/AB6AXuBgCqsUbDtEW6P4doGauXOG9hPhJYT7t57uvVd0_wTkrjd-H24-VLn4WQ27nsbX_Qwb11mWV_EeEHWNiqmviJ5jB8uXVdz-5qE0xui4GVH8PJ33K9yq6hGwUwPLW2dGzBhGrCpYozHhhFCnTjDXdRJZmVxb3xq0_JA7EWW7xF_40tBCsTFO7GUf4uDPtSHX6iMCnH_uMGOmhD0b-De2G_NFfXENdsEL4cWwMjroVsdoG7pQZlgTkqtb_MLUVOUAlUp5ChFLcHyFTeU-', 'md:col-span-2'],
-  ['Mesa decorada banquete', 'https://lh3.googleusercontent.com/aida-public/AB6AXuDgi294C0tE5fugJjT9Tufwnnh3o1MWRDShrDJIvzeXvzrLlTE9WMlkvorTbgiCgoQj3ECJxB4G3fK2H99ZgysICfP9m0b4nxd4b_m8CxeF7hdkNW5McthMUcOTk09OEeypW79MggqlWp5zl-6eWtl9UHyiuiL3s4pp8UZ_NQBrxtkYBjRzvzu0wB7NWYDb6emK-ocW1f2e8Sf8E3pMbJkrt4wEG0GrNFlR01xs_KhFXFSKrKlEi2yWHutkNC96_-HmAOEv1TyL47wd', ''],
-  ['Detalle banquete rústico', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAoyOI_fir9zS_6cgubCSTpPkIzTZzHcblc-NiCkK9HLB15UP4JKXRtvLpjtycmAfhDGXtW5okJQgZ8ysOxXIZVmES2EF6jTwCnf8afE1SkVdWodiF-BSjH2aLyb8oxjIHZ66mL9DEB9nHo4PF6E-XTBnAYqjhj4GF0wjs0RsxkOZvpBMfssDmjtOYij6fb27QFo0eQtXPKHoviPBTRLmTvqGZU6Arhh8YnN5lc02YN9iCz6pZUNv6EaoAERIURlVf28clYBK4bjk1t', 'md:col-span-2'],
-  ['Tarta nupcial', 'https://lh3.googleusercontent.com/aida-public/AB6AXuDY8RGO9kt9h2GTbTWl9N9lXbenkcYhIj1MO4RG_nY0eG3IsvsErtuP9TVq1cjJl8-cVy8uxVJmyPiqEcE6SrK7v7pNDKd3u_SbGv1PG8w4A5lBAnNb37VMMgbwNE8yQXqcPXvGA7fqq8y1TQfE67OYjM4c8Qphv0vEFXUkYTDvZrzmO1vAvlhMqlNMD1-zdmyss0QRXyd79mHkHxcrkJDSkZSE0DZtWamvXP-zhW5PLa1BgzllhLmtEdHUzf4e5ox9LBOZE43DaV6z', ''],
-  ['Brindis novios', 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ_Vbwi2bR89O2vMFGTODfTiB940H_UnC0UrTj-klxbtlB8x9Nw2CgRMIF83v1IvP9qffyY2jyLPocewMXu7EyY9xM0xYwodXvf3_Pb-KOnTcp8hcZHDrOasHXM_G6fDfeC9m-Z1Z2QQB5lhRRrrAPdqizoV7zMZvrAC-aFCuuxiBM-J_o4k6CLxmDfgp3bzWO3a55u3i2akGxjZ0sM2himDoe-L9A92343PQgQG9HEo68DZgtxYp9TTGaHIITnxGbYQexi5J244B', ''],
+  ['Detalle floral boda', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAHCj1dJ3lKknW32VdODwrX7fa7tV7jorwUzYDAFr0ZI75oCPU6tu2X2m5s0tOIY8i5tYKPPypqoII5FyJlNUxwTSZTWRd-06fP4EjhILsYNYaAP6XvIWE...'],
+  ['Novios en la naturaleza', 'https://lh3.googleusercontent.com/aida-public/AB6AXuBgCqsUbDtEW6P4doGauXOG9hPhJYT7t57uvVd0_wTkrjd-H24-VLn4WQ27nsbX_Qwb11mWV_EeEHWNiqmviJ5jB8uXVdz-5qE0xui4GVH8PJ33K9y...'],
+  ['Mesa decorada banquete', 'https://lh3.googleusercontent.com/aida-public/AB6AXuDgi294C0tE5fugJjT9Tufwnnh3o1MWRDShrDJIvzeXvzrLlTE9WMlkvorTbgiCgoQj3ECJxB4G3fK2H99ZgysICfP9m0b4nxd4b_m8CxeF7hdkNW5M...'],
+  ['Detalle banquete rústico', 'https://lh3.googleusercontent.com/aida-public/AB6AXuAoyOI_fir9zS_6cgubCSTpPkIzTZzHcblc-NiCkK9HLB15UP4JKXRtvLpjtycmAfhDGXtW5okJQgZ8ysOxXIZVmES2EF6jTwCnf8afE1SkVdWod...'],
+  ['Tarta nupcial', 'https://lh3.googleusercontent.com/aida-public/AB6AXuDY8RGO9kt9h2GTbTWl9N9lXbenkcYhIj1MO4RG_nY0eG3IsvsErtuP9TVq1cjJl8-cVy8uxVJmyPiqEcE6SrK7v7pNDKd3u_SbGv1PG8w4A5lBAnNb37VMMgbwN...'],
+  ['Brindis novios', 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ_Vbwi2bR89O2vMFGTODfTiB940H_UnC0UrTj-klxbtlB8x9Nw2CgRMIF83v1IvP9qffyY2jyLPocewMXu7EyY9xM0xYwodXvf3_Pb-KOnTcp8hcZHDrOasH...'],
 ];
 
 function Icon({ children, className = '' }: { children: string; className?: string }) {
@@ -63,9 +63,8 @@ export default function Home() {
       <header className="fixed z-50 w-full border-b border-border-light bg-surface-light/90 backdrop-blur-md dark:border-border-dark dark:bg-surface-dark/90">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-20 items-center justify-between">
-            <a className="flex flex-shrink-0 items-center gap-2" href="#inicio" aria-label="El Cordovez">
-              <Icon className="text-3xl text-primary">favorite</Icon>
-              <span className="font-display text-2xl font-bold text-primary">El Cordovez</span>
+            <a className="flex flex-shrink-0 items-center gap-2" href="#inicio" aria-label="El Cordobés">
+              <span className="font-display text-2xl font-bold text-primary">El Cordobés</span>
             </a>
             <nav className="hidden space-x-8 md:flex" aria-label="Principal">
               {['Restaurante', 'Bar', 'Eventos', 'Contacto'].map((item) => (
@@ -83,9 +82,9 @@ export default function Home() {
       <section id="inicio" className="flex min-h-[921px] flex-col overflow-hidden bg-background-light pt-20 dark:bg-background-dark lg:flex-row">
         <div className="relative z-10 flex w-full items-center justify-center p-8 lg:w-1/2 lg:p-16 xl:p-24">
           <div className="max-w-2xl">
-            <span className="mb-6 block text-sm font-bold uppercase tracking-wider text-primary">Finca El Cordovez · Hontoba</span>
+            <span className="mb-6 block text-sm font-bold uppercase tracking-wider text-primary">Finca El Cordobés · Hontoba</span>
             <h1 className="mb-8 font-display text-5xl font-bold leading-tight md:text-6xl lg:text-7xl">Sabor, Brindis y <br /><span className="font-normal italic text-primary">Celebraciones Inolvidables</span></h1>
-            <p className="mb-12 mt-4 text-lg font-light leading-relaxed text-muted-light dark:text-muted-dark md:text-xl">Una auténtica experiencia castellana en el corazón de Hontoba. Tradición, gastronomía y eventos con alma en un entorno histórico único.</p>
+            <p className="mb-12 mt-4 text-lg font-light leading-relaxed text-muted-light dark:text-muted-dark md:text-xl">Una auténtica experiencia castellana en el corazón de Hontoba. Tradición, calidad y elegancia en cada detalle.</p>
             <div className="mb-12 flex flex-col gap-4 sm:flex-row">
               <a className="rounded-full bg-primary px-8 py-3 text-center font-medium text-white shadow-md transition-all hover:bg-opacity-90" href="#restaurante">Reservar Mesa</a>
               <a className="rounded-full bg-primary px-8 py-3 text-center font-medium text-white shadow-md transition-all hover:bg-opacity-90" href="#eventos">Eventos y Salones</a>
@@ -93,7 +92,7 @@ export default function Home() {
           </div>
         </div>
         <div className="relative min-h-[512px] w-full lg:min-h-screen lg:w-1/2">
-          <img alt="Boda romántica en finca" className="absolute inset-0 h-full w-full object-cover" src={heroImage} />
+          <img alt="Boda romántica en finca" className="absolute inset-0 h-full w-full object-cover animate-fade-in-scale" src={heroImage} />
         </div>
       </section>
 
@@ -102,13 +101,13 @@ export default function Home() {
           <div className="mb-16 text-center">
             <h2 className="mb-4 font-display text-4xl font-bold md:text-5xl">Nuestra Propuesta</h2>
             <div className="mx-auto h-1 w-24 rounded-full bg-primary" />
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-light dark:text-muted-dark">Desde una cena íntima con sabores de la tierra hasta grandes eventos corporativos, cada rincón de la finca cuenta una historia.</p>
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-light dark:text-muted-dark">Desde una cena íntima con sabores de la tierra hasta grandes eventos corporativos, cada rincón de nuestra finca es un escenario perfecto.</p>
           </div>
           {proposalSections.map((section, index) => (
             <div key={section.id} className={`grid grid-cols-1 items-center gap-12 ${index < proposalSections.length - 1 ? 'mb-20' : ''} md:grid-cols-2`} id={section.id}>
               <div className={`${section.reverse ? 'order-2 md:order-1' : 'md:order-2'} group relative`}>
                 <div className="absolute -inset-2 rounded-xl bg-primary/20 blur-lg transition duration-500 group-hover:bg-primary/30" />
-                <img alt={section.alt} className="relative h-[400px] w-full rounded-xl object-cover shadow-2xl" src={section.image} />
+                <img alt={section.alt} className="relative h-[400px] w-full rounded-xl object-cover shadow-2xl animate-fade-in-zoom" src={section.image} />
               </div>
               <div className={section.reverse ? 'order-1 md:order-2' : 'md:order-1'}>
                 <div className="mb-4 flex items-center gap-3">
@@ -129,12 +128,12 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionTitle title="Servicios Exclusivos" subtitle="Para que no tengáis que preocuparos por nada." />
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            {services.map(([icon, title, text, link]) => (
-              <article key={title} className="flex h-full flex-col rounded-xl border border-border-light bg-surface-light p-8 shadow-md transition-colors hover:border-primary dark:border-border-dark dark:bg-surface-dark dark:hover:border-primary">
+            {services.map(([icon, title, text]) => (
+              <article key={title} className="flex h-full flex-col rounded-xl border border-border-light bg-surface-light p-8 shadow-md transition-colors hover:border-primary dark:border-border-dark dark:bg-surface-dark animate-fade-in-up">
                 <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10"><Icon className="text-3xl text-primary">{icon}</Icon></div>
                 <h3 className="mb-4 font-display text-2xl font-bold">{title}</h3>
                 <p className="mb-6 flex-grow text-muted-light dark:text-muted-dark">{text}</p>
-                <a className="mt-auto flex items-center gap-1 font-medium text-primary hover:underline" href="#contacto">{link}<Icon className="text-sm">arrow_forward</Icon></a>
+                <a className="mt-auto flex items-center gap-1 font-medium text-primary hover:underline" href="#contacto">Saber más<Icon className="text-sm">arrow_forward</Icon></a>
               </article>
             ))}
           </div>
@@ -145,9 +144,9 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionTitle title="Eventos Reales" />
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-            {gallery.map(([alt, src, span]) => <img key={src} alt={alt} className={`h-48 w-full cursor-pointer rounded-lg object-cover shadow-sm transition-opacity hover:opacity-90 ${span}`} src={src} />)}
+            {gallery.map(([alt, src]) => <img key={src} alt={alt} className="h-48 w-full cursor-pointer rounded-lg object-cover shadow-sm transition-opacity hover:opacity-90 animate-fade-in-up" src={src} />)}
           </div>
-          <div className="mt-10 text-center"><button className="rounded-full border-2 border-primary bg-transparent px-8 py-3 font-medium text-primary transition-colors hover:bg-primary hover:text-white">Ver Galería Completa</button></div>
+          <div className="mt-10 text-center"><button className="rounded-full border-2 border-primary bg-transparent px-8 py-3 font-medium text-primary transition-colors hover:bg-primary hover:text-white">Ver toda la galería</button></div>
         </div>
       </section>
 
@@ -158,7 +157,7 @@ export default function Home() {
 }
 
 function SectionTitle({ title, subtitle }: { title: string; subtitle?: string }) {
-  return <div className="mb-12 text-center"><h2 className="mb-4 font-display text-4xl font-bold">{title}</h2><div className="mx-auto h-1 w-24 rounded-full bg-primary" />{subtitle && <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-light dark:text-muted-dark">{subtitle}</p>}</div>;
+  return <div className="mb-12 text-center"><h2 className="mb-4 font-display text-4xl font-bold">{title}</h2><div className="mx-auto h-1 w-24 rounded-full bg-primary" />{subtitle && <p className="mx-auto mt-4 max-w-2xl text-muted-light dark:text-muted-dark">{subtitle}</p>}</div>;
 }
 
 function ContactSection() {
@@ -168,14 +167,14 @@ function ContactSection() {
       <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="overflow-hidden rounded-2xl border border-border-light bg-surface-light shadow-2xl dark:border-border-dark dark:bg-surface-dark">
           <div className="p-8 md:p-12">
-            <div className="mb-10 text-center"><h2 className="mb-4 font-display text-4xl font-bold">Empecemos a planear</h2><p className="text-muted-light dark:text-muted-dark">Cuéntanos sobre la boda de tus sueños y nos pondremos en contacto contigo.</p></div>
+            <div className="mb-10 text-center"><h2 className="mb-4 font-display text-4xl font-bold">Empecemos a planear</h2><p className="text-muted-light dark:text-muted-dark">Cuéntanos sobre los detalles de tu evento y nos pondremos en contacto contigo en breve.</p></div>
             <form className="space-y-6">
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-2"><Field id="nombre1" label="Nombre y Apellidos" placeholder="Ej. Ana García" /><Field id="nombre2" label="Nombre de tu pareja" placeholder="Ej. Carlos Ruiz" /></div>
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2"><Field id="nombre1" label="Nombre y Apellidos" placeholder="Ej. Ana García" /><Field id="nombre2" label="Nombre de tu pareja" placeholder="Ej. Juan Pérez" /></div>
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2"><Field id="email" label="Correo Electrónico" placeholder="correo@ejemplo.com" type="email" /><Field id="telefono" label="Teléfono" placeholder="+34 600 000 000" type="tel" /></div>
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-2"><Field id="fecha" label="Fecha Estimada" type="date" /><div><Label id="tipo_consulta">Tipo de Reserva / Evento</Label><select className="w-full rounded-lg border border-border-light bg-background-light px-4 py-3 transition-shadow focus:border-primary focus:ring-2 focus:ring-primary dark:border-border-dark dark:bg-background-dark" id="tipo_consulta"><option>Reserva Restaurante</option><option>Reserva Bar / Terraza</option><option>Evento Privado / Boda</option><option>Evento Corporativo</option><option>Otros</option></select></div></div>
-              <div><Label id="mensaje">Cuéntanos más sobre vuestra idea</Label><textarea className="w-full rounded-lg border border-border-light bg-background-light px-4 py-3 transition-shadow focus:border-primary focus:ring-2 focus:ring-primary dark:border-border-dark dark:bg-background-dark" id="mensaje" placeholder="¿Boda de día o de noche? ¿Alguna temática especial?" rows={4} /></div>
-              <div className="flex items-start"><input className="mt-1 h-4 w-4 rounded border-border-light bg-background-light text-primary focus:ring-primary dark:border-border-dark dark:bg-background-dark" id="privacidad" type="checkbox" /><label className="ml-3 text-sm text-muted-light dark:text-muted-dark" htmlFor="privacidad">Acepto la política de privacidad y el tratamiento de mis datos para ser contactado.</label></div>
-              <button className="mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-4 text-lg font-bold text-white shadow-md transition-all hover:bg-opacity-90" type="button">Enviar Solicitud<Icon>send</Icon></button>
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2"><Field id="fecha" label="Fecha Estimada" type="date" /><div><Label id="tipo_consulta">Tipo de Reserva / Evento</Label><select id="tipo_consulta" className="w-full rounded-lg border border-border-light bg-background-light px-4 py-3 transition-shadow focus:border-primary focus:ring-2 focus:ring-primary/20 dark:border-border-dark dark:bg-background-dark"><option>Boda</option><option>Celebración privada</option><option>Evento corporativo</option><option>Otra</option></select></div></div>
+              <div><Label id="mensaje">Cuéntanos más sobre vuestra idea</Label><textarea id="mensaje" className="w-full rounded-lg border border-border-light bg-background-light px-4 py-3 transition-shadow focus:border-primary focus:ring-2 focus:ring-primary/20 dark:border-border-dark dark:bg-background-dark" rows={4} placeholder="Comparte detalles de tu evento..." /></div>
+              <div className="flex items-start"><input id="privacidad" type="checkbox" className="mt-1 h-4 w-4 rounded border-border-light bg-background-light text-primary focus:ring-primary dark:border-border-dark dark:bg-background-dark" /><label htmlFor="privacidad" className="ml-3 text-sm text-muted-light dark:text-muted-dark">Acepto la política de privacidad y el tratamiento de mis datos.</label></div>
+              <button className="mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-4 text-lg font-bold text-white shadow-md transition-all hover:bg-opacity-90" type="submit">Solicitar presupuesto <Icon>arrow_forward</Icon></button>
             </form>
           </div>
         </div>
@@ -189,7 +188,7 @@ function Label({ id, children }: { id: string; children: React.ReactNode }) {
 }
 
 function Field({ id, label, type = 'text', placeholder = '' }: { id: string; label: string; type?: string; placeholder?: string }) {
-  return <div><Label id={id}>{label}</Label><input className="w-full rounded-lg border border-border-light bg-background-light px-4 py-3 transition-shadow focus:border-primary focus:ring-2 focus:ring-primary dark:border-border-dark dark:bg-background-dark" id={id} placeholder={placeholder} type={type} /></div>;
+  return <div><Label id={id}>{label}</Label><input id={id} type={type} className="w-full rounded-lg border border-border-light bg-background-light px-4 py-3 transition-shadow focus:border-primary focus:ring-2 focus:ring-primary/20 dark:border-border-dark dark:bg-background-dark" placeholder={placeholder} /></div>;
 }
 
 function Footer() {
@@ -197,11 +196,11 @@ function Footer() {
     <footer className="border-t border-border-light bg-surface-light pb-8 pt-16 dark:border-border-dark dark:bg-surface-dark">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 grid grid-cols-1 gap-12 text-center md:grid-cols-3 md:text-left">
-          <div><div className="mb-6 flex items-center justify-center gap-2 md:justify-start"><Icon className="text-2xl text-primary">favorite</Icon><span className="font-display text-2xl font-bold text-primary">El Cordovez</span></div><p className="text-muted-light dark:text-muted-dark">El lugar perfecto para celebrar el amor en la provincia de Guadalajara. Espacios únicos para bodas inolvidables.</p></div>
-          <div><h4 className="mb-6 font-display text-xl font-bold">Contacto</h4><ul className="space-y-4"><li className="flex items-start justify-center gap-3 text-muted-light dark:text-muted-dark md:justify-start"><Icon className="mt-1 text-primary">location_on</Icon><span>Ctra. N-320, Km 15<br />19004 Guadalajara</span></li><li className="flex items-center justify-center gap-3 text-muted-light dark:text-muted-dark md:justify-start"><Icon className="text-primary">phone</Icon><span>+34 949 000 000</span></li><li className="flex items-center justify-center gap-3 text-muted-light dark:text-muted-dark md:justify-start"><Icon className="text-primary">email</Icon><span>bodas@elcordovez.es</span></li></ul></div>
-          <div><h4 className="mb-6 font-display text-xl font-bold">Síguenos</h4><p className="mb-4 text-muted-light dark:text-muted-dark">Inspírate con nuestras últimas celebraciones.</p><div className="flex justify-center space-x-4 md:justify-start">{['photo_camera', 'facebook', 'ondemand_video'].map((icon) => <a key={icon} className="flex h-10 w-10 items-center justify-center rounded-full border border-border-light bg-background-light transition-colors hover:bg-primary hover:text-white dark:border-border-dark dark:bg-background-dark" href="#" aria-label={icon}><Icon>{icon}</Icon></a>)}</div></div>
+          <div><div className="mb-6 flex items-center justify-center gap-2 md:justify-start"><span className="font-display text-2xl font-bold text-primary">El Cordobés</span></div><p className="text-muted-light dark:text-muted-dark">Finca de eventos en Hontoba, Guadalajara. Restaurante, bar y salón de bodas.</p></div>
+          <div><h4 className="mb-6 font-display text-xl font-bold">Contacto</h4><ul className="space-y-4"><li className="flex items-start justify-center gap-3 text-muted-light dark:text-muted-dark md:justify-start"><Icon className="text-lg">phone</Icon><a href="tel:+34949...">+34 949 ...</a></li><li className="flex items-start justify-center gap-3 text-muted-light dark:text-muted-dark md:justify-start"><Icon className="text-lg">email</Icon><a href="mailto:info@elcordobes.es">info@elcordobes.es</a></li></ul></div>
+          <div><h4 className="mb-6 font-display text-xl font-bold">Síguenos</h4><p className="mb-4 text-muted-light dark:text-muted-dark">Inspírate con nuestras últimas celebraciones.</p><div className="flex items-center justify-center gap-4 md:justify-start"><a href="#" className="transition-colors hover:text-primary">Instagram</a><a href="#" className="transition-colors hover:text-primary">Facebook</a></div></div>
         </div>
-        <div className="flex flex-col items-center justify-between border-t border-border-light pt-8 text-sm text-muted-light dark:border-border-dark dark:text-muted-dark md:flex-row"><p>© 2024 Finca El Cordovez. Todos los derechos reservados.</p><a className="mt-4 transition-colors hover:text-primary md:mt-0" href="#">Aviso Legal</a></div>
+        <div className="flex flex-col items-center justify-between border-t border-border-light pt-8 text-sm text-muted-light dark:border-border-dark dark:text-muted-dark md:flex-row"><p>© 2024 Finca El Cordobés. Todos los derechos reservados.</p><p>Hontoba, Guadalajara</p></div>
       </div>
     </footer>
   );

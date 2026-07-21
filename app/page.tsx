@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 
 // Fotos reales de Finca El Cordobés (reemplazan TODAS las de Unsplash)
-const heroImage = '/images/foto1-patio-rustico.jpg';
+const heroImage = 'public/images/foto1-patio-rustico.jpeg';
 
 const proposalSections = [
   {

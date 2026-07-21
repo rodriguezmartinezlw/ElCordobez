@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 
 // Fotos reales de Finca El Cordobés (reemplazan TODAS las de Unsplash)
-const heroImage = 'public/images/foto1-patio-rustico.jpeg';
+const heroImage = '/images/foto1-patio-rustico.jpeg';
 
 const proposalSections = [
   {
@@ -13,7 +13,7 @@ const proposalSections = [
     description:
       'Descubra la esencia de la Cocina Manchega. Nuestra carta rinde homenaje a los productos locales: desde la miel de La Alcarria hasta los vinos de la región, cada plato es un viaje sensorial por los sabores de Castilla-La Mancha.',
     bullets: ['Especialidad en asados tradicionales', 'Productos de proximidad (Km 0)', 'Bodega con selección de D.O. locales'],
-    image: '/images/foto4-detalle-pared.jpg',
+    image: '/images/foto4-detalle-pared.jpeg',
     alt: 'Restaurante de Origen - Detalle decorativo',
     reverse: true,
   },
@@ -24,7 +24,7 @@ const proposalSections = [
     description:
       'El lugar ideal para desconectar. Disfrute de atardeceres mágicos en nuestro patio rústico con una selección de coctelería de autor y aperitivos tradicionales en un ambiente relajado.',
     bullets: ['Terraza exterior con encanto', 'Coctelería clásica y creativa', 'Tapas y raciones de autor'],
-    image: '/images/foto2-salon-espejo.jpg',
+    image: '/images/foto2-salon-espejo.jpeg',
     alt: 'Bar y Terraza - Salón con encanto',
   },
   {
@@ -34,7 +34,7 @@ const proposalSections = [
     description:
       'Un espacio versátil que se adapta a sus necesidades. Desde bodas exclusivas y celebraciones privadas hasta reuniones corporativas, nuestro salón ofrece la elegancia y tecnología necesaria para hacer memorable cualquier evento.',
     bullets: ['Capacidad modular para grandes grupos', 'Equipamiento audiovisual completo', 'Asesoramiento personalizado para eventos'],
-    image: '/images/foto3-salon-amplio.jpg',
+    image: '/images/foto3-salon-amplio.jpeg',
     alt: 'Salón de Eventos - Espacio amplio',
     reverse: true,
   },
@@ -47,10 +47,10 @@ const services = [
 
 // Galería con las 4 fotos reales de la finca (reemplaza las 6 de Unsplash)
 const gallery = [
-  ['Patio rústico principal', '/images/foto1-patio-rustico.jpg'],
-  ['Salón con espejo y ventanas', '/images/foto2-salon-espejo.jpg'],
-  ['Salón amplio para eventos', '/images/foto3-salon-amplio.jpg'],
-  ['Detalle decorativo pared', '/images/foto4-detalle-pared.jpg'],
+  ['Patio rústico principal', '/images/foto1-patio-rustico.jpeg'],
+  ['Salón con espejo y ventanas', '/images/foto2-salon-espejo.jpeg'],
+  ['Salón amplio para eventos', '/images/foto3-salon-amplio.jpeg'],
+  ['Detalle decorativo pared', '/images/foto4-detalle-pared.jpeg'],
 ];
 
 function Icon({ children, className = '' }: { children: string; className?: string }) {

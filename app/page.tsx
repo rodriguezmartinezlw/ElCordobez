@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 
-// Fotos reales de Finca El Cordobés (reemplazan TODAS las de Unsplash)
+// Fotos reales de Restaurante El Pela (reemplazan TODAS las de Unsplash)
 const heroImage = '/images/foto1-patio-rustico.jpeg';
 
 const proposalSections = [
@@ -45,7 +45,7 @@ const services = [
   ['event_available', 'Wedding Planner', 'Nuestro equipo de coordinación integral os acompañará desde el primer día. Diseño conceptual, búsqueda de proveedores, gestión de presupuesto y coordinación de todos los detalles.', 'Consultar'],
 ];
 
-// Galería con las 4 fotos reales de la finca (reemplaza las 6 de Unsplash)
+// Galería con las 4 fotos reales del restaurante (reemplaza las 6 de Unsplash)
 const gallery = [
   ['Patio rústico principal', '/images/foto1-patio-rustico.jpeg'],
   ['Salón con espejo y ventanas', '/images/foto2-salon-espejo.jpeg'],
@@ -77,8 +77,8 @@ export default function Home() {
       <header className="fixed z-50 w-full border-b border-border-light bg-surface-light/90 backdrop-blur-md dark:border-border-dark dark:bg-surface-dark/90">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-20 items-center justify-between">
-            <a className="flex flex-shrink-0 items-center gap-2" href="#inicio" aria-label="El Cordobés">
-              <span className="font-display text-2xl font-bold text-primary">El Cordobés</span>
+            <a className="flex flex-shrink-0 items-center gap-2" href="#inicio" aria-label="Restaurante El Pela">
+              <span className="font-display text-2xl font-bold text-primary">El Pela</span>
             </a>
             <nav className="hidden space-x-8 md:flex" aria-label="Principal">
               {['Restaurante', 'Bar', 'Eventos', 'Contacto'].map((item) => (
@@ -96,7 +96,7 @@ export default function Home() {
       <section id="inicio" className="flex min-h-[921px] flex-col overflow-hidden bg-background-light pt-20 dark:bg-background-dark lg:flex-row">
         <div className="relative z-10 flex w-full items-center justify-center p-8 lg:w-1/2 lg:p-16 xl:p-24">
           <div className="max-w-2xl">
-            <span className="mb-6 block text-sm font-bold uppercase tracking-wider text-primary">Finca El Cordobés · Hontoba</span>
+            <span className="mb-6 block text-sm font-bold uppercase tracking-wider text-primary">Restaurante El Pela · Hontoba</span>
             <h1 className="mb-8 font-display text-5xl font-bold leading-tight md:text-6xl lg:text-7xl">Sabor, Brindis y <br /><span className="font-normal italic text-primary">Celebraciones Inolvidables</span></h1>
             <p className="mb-12 mt-4 text-lg font-light leading-relaxed text-muted-light dark:text-muted-dark md:text-xl">Una auténtica experiencia castellana en el corazón de Hontoba. Tradición, calidad y elegancia en cada detalle.</p>
             <div className="mb-12 flex flex-col gap-4 sm:flex-row">
@@ -107,7 +107,7 @@ export default function Home() {
         </div>
         <div className="relative min-h-[512px] w-full lg:min-h-screen lg:w-1/2">
           <img 
-            alt="Patio rústico de Finca El Cordobés" 
+            alt="Patio rústico de Restaurante El Pela"
             className="absolute inset-0 h-full w-full object-cover animate-fade-in-scale" 
             src={heroImage}
             loading="eager"
@@ -121,7 +121,7 @@ export default function Home() {
           <div className="mb-16 text-center">
             <h2 className="mb-4 font-display text-4xl font-bold md:text-5xl">Nuestra Propuesta</h2>
             <div className="mx-auto h-1 w-24 rounded-full bg-primary" />
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-light dark:text-muted-dark">Desde una cena íntima con sabores de la tierra hasta grandes eventos corporativos, cada rincón de nuestra finca es un escenario perfecto.</p>
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-light dark:text-muted-dark">Desde una cena íntima con sabores de la tierra hasta grandes eventos corporativos, cada rincón de nuestro restaurante es un escenario perfecto.</p>
           </div>
           {proposalSections.map((section, index) => (
             <div key={section.id} className={`grid grid-cols-1 items-center gap-12 ${index < proposalSections.length - 1 ? 'mb-20' : ''} md:grid-cols-2 scroll-animate`} id={section.id}>
@@ -272,9 +272,9 @@ function Footer() {
         <div className="mb-12 grid grid-cols-1 gap-12 text-center md:grid-cols-3 md:text-left">
           <div>
             <div className="mb-6 flex items-center justify-center gap-2 md:justify-start">
-              <span className="font-display text-2xl font-bold text-primary">El Cordobés</span>
+              <span className="font-display text-2xl font-bold text-primary">El Pela</span>
             </div>
-            <p className="text-muted-light dark:text-muted-dark">Finca de eventos en Hontoba, Guadalajara. Restaurante, bar y salón de bodas.</p>
+            <p className="text-muted-light dark:text-muted-dark">Restaurante, bar y salón de bodas y eventos en Hontoba, Guadalajara.</p>
           </div>
           <div>
             <h4 className="mb-6 font-display text-xl font-bold">Contacto</h4>
@@ -285,7 +285,7 @@ function Footer() {
               </li>
               <li className="flex items-start justify-center gap-3 text-muted-light dark:text-muted-dark md:justify-start">
                 <Icon className="text-lg">email</Icon>
-                <a href="mailto:info@elcordobes.es" className="hover:text-primary">info@elcordobes.es</a>
+                <a href="mailto:info@restauranteelpela.es" className="hover:text-primary">info@restauranteelpela.es</a>
               </li>
             </ul>
           </div>
@@ -299,7 +299,7 @@ function Footer() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-between border-t border-border-light pt-8 text-sm text-muted-light dark:border-border-dark dark:text-muted-dark md:flex-row">
-          <p>© 2024 Finca El Cordobés. Todos los derechos reservados.</p>
+          <p>© 2026 Restaurante El Pela. Todos los derechos reservados.</p>
           <p>Hontoba, Guadalajara</p>
         </div>
       </div>

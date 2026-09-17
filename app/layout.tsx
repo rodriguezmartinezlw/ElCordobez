@@ -16,9 +16,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Finca El Cordovez | Restaurante, bar y eventos en Hontoba',
+  title: 'Restaurante El Pela | Restaurante, bar y eventos en Hontoba',
   description:
-    'Una auténtica experiencia castellana para restaurante, bar, bodas y eventos en Finca El Cordovez, Hontoba.',
+    'Una auténtica experiencia castellana para restaurante, bar, bodas y eventos en Restaurante El Pela, Hontoba.',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

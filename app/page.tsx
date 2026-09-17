@@ -285,7 +285,7 @@ function Footer() {
               </li>
               <li className="flex items-start justify-center gap-3 text-muted-light dark:text-muted-dark md:justify-start">
                 <Icon className="text-lg">email</Icon>
-                <a href="mailto:info@restauranteelpela.es" className="hover:text-primary">info@restauranteelpela.es</a>
+                <a href="mailto:info@restauranteelpela.com" className="hover:text-primary">info@restauranteelpela.com</a>
               </li>
             </ul>
           </div>

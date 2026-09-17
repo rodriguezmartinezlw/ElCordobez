@@ -6,17 +6,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#9f5f3b',
-        'background-light': '#f8f3ee',
-        'background-dark': '#17120f',
-        'surface-light': '#fffaf5',
-        'surface-dark': '#241b17',
-        'text-light': '#2e211c',
-        'text-dark': '#f8f3ee',
-        'muted-light': '#6f5b51',
-        'muted-dark': '#d4c4b8',
-        'border-light': '#eadbd0',
-        'border-dark': '#3a2d27',
+        primary: 'rgb(var(--c-primary) / <alpha-value>)',
+        'background-light': 'rgb(var(--c-background-light) / <alpha-value>)',
+        'background-dark': 'rgb(var(--c-background-dark) / <alpha-value>)',
+        'surface-light': 'rgb(var(--c-surface-light) / <alpha-value>)',
+        'surface-dark': 'rgb(var(--c-surface-dark) / <alpha-value>)',
+        'text-light': 'rgb(var(--c-text-light) / <alpha-value>)',
+        'text-dark': 'rgb(var(--c-text-dark) / <alpha-value>)',
+        'muted-light': 'rgb(var(--c-muted-light) / <alpha-value>)',
+        'muted-dark': 'rgb(var(--c-muted-dark) / <alpha-value>)',
+        'border-light': 'rgb(var(--c-border-light) / <alpha-value>)',
+        'border-dark': 'rgb(var(--c-border-dark) / <alpha-value>)',
       },
       fontFamily: {
         display: ['var(--font-playfair)'],

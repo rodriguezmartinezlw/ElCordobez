@@ -4,6 +4,27 @@
 
 :root {
   color-scheme: light;
+
+  --c-primary: 159 95 59;
+  --c-background-light: 248 243 238;
+  --c-background-dark: 23 18 15;
+  --c-surface-light: 255 250 245;
+  --c-surface-dark: 36 27 23;
+  --c-text-light: 46 33 28;
+  --c-text-dark: 248 243 238;
+  --c-muted-light: 111 91 81;
+  --c-muted-dark: 212 196 184;
+  --c-border-light: 234 219 208;
+  --c-border-dark: 58 45 39;
+}
+
+[data-theme='verde'] {
+  --c-primary: 70 101 86;
+  --c-background-light: 238 243 240;
+  --c-surface-light: 255 255 255;
+  --c-text-light: 27 43 34;
+  --c-muted-light: 62 82 70;
+  --c-border-light: 216 226 220;
 }
 
 html {
@@ -16,9 +37,9 @@ body {
 
 .hero-pattern {
   background-image:
-    radial-gradient(circle at 20% 20%, rgb(159 95 59 / 0.12), transparent 28rem),
-    radial-gradient(circle at 80% 0%, rgb(159 95 59 / 0.1), transparent 24rem),
-    linear-gradient(135deg, rgb(159 95 59 / 0.08) 25%, transparent 25%),
-    linear-gradient(225deg, rgb(159 95 59 / 0.08) 25%, transparent 25%);
+    radial-gradient(circle at 20% 20%, rgb(var(--c-primary) / 0.12), transparent 28rem),
+    radial-gradient(circle at 80% 0%, rgb(var(--c-primary) / 0.1), transparent 24rem),
+    linear-gradient(135deg, rgb(var(--c-primary) / 0.08) 25%, transparent 25%),
+    linear-gradient(225deg, rgb(var(--c-primary) / 0.08) 25%, transparent 25%);
   background-size: auto, auto, 48px 48px, 48px 48px;
 }

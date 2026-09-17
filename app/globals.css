@@ -5,26 +5,18 @@
 :root {
   color-scheme: light;
 
-  --c-primary: 159 95 59;
-  --c-background-light: 248 243 238;
-  --c-background-dark: 23 18 15;
-  --c-surface-light: 255 250 245;
-  --c-surface-dark: 36 27 23;
-  --c-text-light: 46 33 28;
-  --c-text-dark: 248 243 238;
-  --c-muted-light: 111 91 81;
-  --c-muted-dark: 212 196 184;
-  --c-border-light: 234 219 208;
-  --c-border-dark: 58 45 39;
-}
-
-[data-theme='verde'] {
+  /* Paleta verde salvia (aprobada por el cliente el 17-sep-2026) */
   --c-primary: 70 101 86;
   --c-background-light: 238 243 240;
+  --c-background-dark: 23 18 15;
   --c-surface-light: 255 255 255;
+  --c-surface-dark: 36 27 23;
   --c-text-light: 27 43 34;
+  --c-text-dark: 248 243 238;
   --c-muted-light: 62 82 70;
+  --c-muted-dark: 212 196 184;
   --c-border-light: 216 226 220;
+  --c-border-dark: 58 45 39;
 }
 
 html {

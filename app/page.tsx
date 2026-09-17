@@ -85,7 +85,7 @@ export default function Home() {
                 <a key={item} className="font-medium transition-colors hover:text-primary" href={`#${item.toLowerCase()}`}>{item}</a>
               ))}
             </nav>
-            <a className="hidden rounded-full bg-primary px-6 py-2 font-medium text-white shadow-md transition-all hover:bg-opacity-90 md:flex" href="#contacto">Planificar mi Boda</a>
+            <a className="hidden rounded-full bg-primary px-6 py-2 font-medium text-white shadow-md transition-all hover:bg-[#365343] md:flex" href="#contacto">Planificar mi Boda</a>
             <button className="flex items-center hover:text-primary focus:outline-none md:hidden" aria-label="Abrir menú">
               <Icon>menu</Icon>
             </button>
@@ -100,15 +100,15 @@ export default function Home() {
             <h1 className="mb-8 font-display text-5xl font-bold leading-tight md:text-6xl lg:text-7xl">Sabor, Brindis y <br /><span className="font-normal italic text-primary">Celebraciones Inolvidables</span></h1>
             <p className="mb-12 mt-4 text-lg font-light leading-relaxed text-muted-light dark:text-muted-dark md:text-xl">Una auténtica experiencia castellana en el corazón de Hontoba. Tradición, calidad y elegancia en cada detalle.</p>
             <div className="mb-12 flex flex-col gap-4 sm:flex-row">
-              <a className="rounded-full bg-primary px-8 py-3 text-center font-medium text-white shadow-md transition-all hover:bg-opacity-90" href="#restaurante">Reservar Mesa</a>
-              <a className="rounded-full bg-primary px-8 py-3 text-center font-medium text-white shadow-md transition-all hover:bg-opacity-90" href="#eventos">Eventos y Salones</a>
+              <a className="rounded-full bg-primary px-8 py-3 text-center font-medium text-white shadow-md transition-all hover:bg-[#365343]" href="#restaurante">Reservar Mesa</a>
+              <a className="rounded-full bg-primary px-8 py-3 text-center font-medium text-white shadow-md transition-all hover:bg-[#365343]" href="#eventos">Eventos y Salones</a>
             </div>
           </div>
         </div>
         <div className="relative min-h-[512px] w-full lg:min-h-screen lg:w-1/2">
-          <img 
+          <img
             alt="Patio rústico de Restaurante El Pela"
-            className="absolute inset-0 h-full w-full object-cover animate-fade-in-scale" 
+            className="absolute inset-0 h-full w-full object-cover animate-fade-in-scale"
             src={heroImage}
             loading="eager"
             decoding="async"
@@ -127,9 +127,9 @@ export default function Home() {
             <div key={section.id} className={`grid grid-cols-1 items-center gap-12 ${index < proposalSections.length - 1 ? 'mb-20' : ''} md:grid-cols-2 scroll-animate`} id={section.id}>
               <div className={`${section.reverse ? 'order-2 md:order-1' : 'md:order-2'} group relative`}>
                 <div className="absolute -inset-2 rounded-xl bg-primary/20 blur-lg transition duration-500 group-hover:bg-primary/30" />
-                <img 
-                  alt={section.alt} 
-                  className="relative h-[400px] w-full rounded-xl object-cover shadow-2xl animate-fade-in-zoom" 
+                <img
+                  alt={section.alt}
+                  className="relative h-[400px] w-full rounded-xl object-cover shadow-2xl animate-fade-in-zoom"
                   src={section.image}
                   loading="lazy"
                   decoding="async"
@@ -171,10 +171,10 @@ export default function Home() {
           <SectionTitle title="Nuestras Instalaciones" />
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             {gallery.map(([alt, src]) => (
-              <img 
-                key={src} 
-                alt={alt} 
-                className="scroll-animate h-48 w-full cursor-pointer rounded-lg object-cover shadow-sm transition-opacity hover:opacity-90" 
+              <img
+                key={src}
+                alt={alt}
+                className="scroll-animate h-48 w-full cursor-pointer rounded-lg object-cover shadow-sm transition-opacity hover:opacity-90"
                 src={src}
                 loading="lazy"
                 decoding="async"
@@ -243,7 +243,7 @@ function ContactSection() {
                 <input id="privacidad" type="checkbox" className="mt-1 h-4 w-4 rounded border-border-light bg-background-light text-primary focus:ring-primary dark:border-border-dark dark:bg-background-dark" />
                 <label htmlFor="privacidad" className="ml-3 text-sm text-muted-light dark:text-muted-dark">Acepto la política de privacidad y el tratamiento de mis datos.</label>
               </div>
-              <button className="mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-4 text-lg font-bold text-white shadow-md transition-all hover:bg-opacity-90" type="submit">Solicitar presupuesto <Icon>arrow_forward</Icon></button>
+              <button className="mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-4 text-lg font-bold text-white shadow-md transition-all hover:bg-[#365343]" type="submit">Solicitar presupuesto <Icon>arrow_forward</Icon></button>
             </form>
           </div>
         </div>
@@ -267,38 +267,38 @@ function Field({ id, label, type = 'text', placeholder = '' }: { id: string; lab
 
 function Footer() {
   return (
-    <footer className="border-t border-border-light bg-surface-light pb-8 pt-16 dark:border-border-dark dark:bg-surface-dark">
+    <footer className="border-t border-[#3b5949] bg-[#273d32] pb-8 pt-16 text-[#d6e5dc]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 grid grid-cols-1 gap-12 text-center md:grid-cols-3 md:text-left">
           <div>
             <div className="mb-6 flex items-center justify-center gap-2 md:justify-start">
-              <span className="font-display text-2xl font-bold text-primary">El Pela</span>
+              <span className="font-display text-2xl font-bold text-white">El Pela</span>
             </div>
-            <p className="text-muted-light dark:text-muted-dark">Restaurante, bar y salón de bodas y eventos en Hontoba, Guadalajara.</p>
+            <p className="text-[#b8ccbf]">Restaurante, bar y salón de bodas y eventos en Hontoba, Guadalajara.</p>
           </div>
           <div>
-            <h4 className="mb-6 font-display text-xl font-bold">Contacto</h4>
+            <h4 className="mb-6 font-display text-xl font-bold text-[#c8ead7]">Contacto</h4>
             <ul className="space-y-4">
-              <li className="flex items-start justify-center gap-3 text-muted-light dark:text-muted-dark md:justify-start">
+              <li className="flex items-start justify-center gap-3 text-[#b8ccbf] md:justify-start">
                 <Icon className="text-lg">phone</Icon>
-                <a href="tel:+34949" className="hover:text-primary">+34 949 ...</a>
+                <a href="tel:+34949" className="hover:text-white">+34 949 ...</a>
               </li>
-              <li className="flex items-start justify-center gap-3 text-muted-light dark:text-muted-dark md:justify-start">
+              <li className="flex items-start justify-center gap-3 text-[#b8ccbf] md:justify-start">
                 <Icon className="text-lg">email</Icon>
-                <a href="mailto:info@restauranteelpela.com" className="hover:text-primary">info@restauranteelpela.com</a>
+                <a href="mailto:info@restauranteelpela.com" className="hover:text-white">info@restauranteelpela.com</a>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="mb-6 font-display text-xl font-bold">Síguenos</h4>
-            <p className="mb-4 text-muted-light dark:text-muted-dark">Inspírate con nuestras últimas celebraciones.</p>
+            <h4 className="mb-6 font-display text-xl font-bold text-[#c8ead7]">Síguenos</h4>
+            <p className="mb-4 text-[#b8ccbf]">Inspírate con nuestras últimas celebraciones.</p>
             <div className="flex items-center justify-center gap-4 md:justify-start">
-              <a href="#" className="transition-colors hover:text-primary">Instagram</a>
-              <a href="#" className="transition-colors hover:text-primary">Facebook</a>
+              <a href="#" className="transition-colors hover:text-white">Instagram</a>
+              <a href="#" className="transition-colors hover:text-white">Facebook</a>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-between border-t border-border-light pt-8 text-sm text-muted-light dark:border-border-dark dark:text-muted-dark md:flex-row">
+        <div className="flex flex-col items-center justify-between border-t border-[#3b5949]/70 pt-8 text-sm text-[#9cb4a5] md:flex-row">
           <p>© 2026 Restaurante El Pela. Todos los derechos reservados.</p>
           <p>Hontoba, Guadalajara</p>
         </div>
